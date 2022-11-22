@@ -1,0 +1,21 @@
+<section class="wrapper">
+  <div class="wrapper__item">
+    <label>All</label
+    ><input
+      type="checkbox"
+      [checked]="allSelected"
+      (change)="toggleMasterSelection()"
+    />
+  </div>
+  <div *ngFor="let item of optionList" class="wrapper__item">
+    <label [for]="item.id"> {{ item.title }}</label
+    ><input
+      type="checkbox"
+      [id]="item.id"
+      [checked]="selection.isSelected(item)"
+      (change)="selection.toggle(item)"
+    />
+  </div>
+
+  <pre><code>{{ selection.selected | json }}</code></pre>
+</section>

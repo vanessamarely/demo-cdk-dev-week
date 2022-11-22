@@ -1,0 +1,18 @@
+.wrapper {
+  margin: 0 auto;
+  width: 30rem;
+
+  &__item {
+    display: flex;
+
+    label {
+      width: 80%;
+    }
+
+    &first-child {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

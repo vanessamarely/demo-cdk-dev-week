@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 0 auto;
+  width: 30rem;
+  &__list {
+    &__item {
+      display: flex;
+    }
+  }
+}

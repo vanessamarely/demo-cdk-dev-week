@@ -1,0 +1,19 @@
+.wrapper {
+  margin: 0 auto;
+  width: 30rem;
+  &__item {
+    &__card {
+      align-items: center;
+      background-color: #fafafa;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      display: flex;
+      height: 40px;
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+    &__body {
+      padding: 1rem;
+  }
+  }
+}
